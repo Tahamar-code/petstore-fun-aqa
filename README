@@ -6,5 +6,12 @@ v.1.0.0
 
 1) Add dependencies
 2) Add Retrofit package
-3) Add Retorfit interface
+3) Add Retrofit interface
 4) Add class UploadImageResponse
+=====================================================
+v.1.0.1
+
+1) Develop pet tests
+2) Add DTO pojos for Pet and bla bla bla
+3) Add first test for create and upload
+4) Add Faker fabric for creating Pet

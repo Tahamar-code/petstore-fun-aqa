@@ -27,6 +27,9 @@ dependencies {
     // kuda zhe bez my sweaty lombok
     testCompileOnly("org.projectlombok:lombok:1.18.34")
     testAnnotationProcessor("org.projectlombok:lombok:1.18.34")
+
+    // faker for test data
+    testImplementation("com.github.javafaker:javafaker:1.0.2")
 }
 
 tasks.test {
