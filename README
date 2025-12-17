@@ -15,3 +15,8 @@ v.1.0.1
 2) Add DTO pojos for Pet and bla bla bla
 3) Add first test for create and upload
 4) Add Faker fabric for creating Pet
+
+=====================================================
+v.1.0.2
+
+1) Develop pet tests + negative

@@ -25,6 +25,32 @@ public class PetFactoryUtils {
 
     }
 
+    public static Pet randomPetWithoutName() {
+        return new Pet(
+                faker.number().numberBetween(1, 10_000),
+                randomCategory(),
+                null,
+                List.of(faker.internet().image()),
+                List.of(randomTag()),
+                randomStatus()
+        );
+
+
+
+    }
+
+    public static Pet randomPetWithInvalidStatus() {
+        return new Pet(
+                faker.number()
+                     .numberBetween(1, 10_000),
+                randomCategory(),
+                faker.animal().name(),
+                List.of(faker.internet()
+                             .image()),
+                List.of(randomTag()),
+                invalidStatus()
+        );
+    }
     private static Category randomCategory() {
         return new Category(
                 faker.number().numberBetween(1, 1000),
@@ -42,5 +68,9 @@ public class PetFactoryUtils {
     private static String randomStatus() {
         return List.of("available", "pending", "sold")
                    .get(random.nextInt(3));
+    }
+
+    private static String invalidStatus(){
+        return "invalid";
     }
 }
